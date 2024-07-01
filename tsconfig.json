@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "composite": true,
+    "strict": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "types": [
+      "jest"
+    ],
+    "outDir": "./dist",
+    "esModuleInterop": true
+  },
+  "exclude": ["./dist/**/*.js", "./docs/**/*.js", "./coverage/**/*.js"],
+  "include": ["./package.json", "./**/*.ts", "./**/*.js"]
+}

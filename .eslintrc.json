@@ -1,0 +1,53 @@
+{
+  "env": {
+    "es2023": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript/base",
+    "prettier",
+    "plugin:n/recommended",
+    "plugin:jest/recommended",
+    "plugin:security/recommended-legacy"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "project": "tsconfig.json"
+  },
+  "plugins": ["prettier", "jest"],
+  "rules": {
+    "prettier/prettier": "error",
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/no-alias-methods": "error",
+    "jest/valid-expect": "error",
+    "n/no-unpublished-import": [
+      "error",
+      {
+        "allowModules": ["jest"]
+      }
+    ],
+    "n/no-missing-import": [
+      "error",
+      {
+        "allowModules": [],
+        "resolvePaths": ["./src"],
+        "tryExtensions": [".js", ".ts"]
+      }
+    ],
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "func-names": "off",
+    "no-plusplus": "off",
+    "no-process-exit": "off",
+    "class-methods-use-this": "off"
+  }
+}

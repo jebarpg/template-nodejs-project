@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+#echo "prepare-commit-msg"
+#echo $1
+trap cleanup ERR
+cleanup() {
+    exec < /dev/tty && npx cz --hook || true
+    exit 0
+}
+npx commitlint --edit $1

@@ -1,0 +1,35 @@
+name: 🧹 Lint CI
+on:
+  workflow_call:
+    secrets:
+      token:
+        required: true
+jobs:
+  run-linters:
+    runs-on: ubuntu-latest
+    # Set a reasonable timeout, 120x shorter than GitHub's default 6 hours
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        node: [22]
+    name: 🧹 🎨 🔢 Run linters with Node.js Version ${{ matrix.node }}
+    steps:
+      - name: 📂 Check out Git repository
+        uses: actions/checkout@v4
+
+      - name: 🛠️ Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      # ESLint and Prettier must be in `package.json`
+      - name: 📦 Install Node.js dependencies
+        run: npm ci
+
+      - name: 🧹 🎨 Run linters and formatting
+        uses: wearerequired/lint-action@v2
+        with:
+          github_token: ${{ secrets.token }}
+          # Enable linters
+          eslint: true
+          prettier: true

@@ -1,0 +1,32 @@
+name: 📝 Documentation CI
+on:
+  workflow_call:
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    # Set a reasonable timeout, 120x shorter than GitHub's default 6 hours
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        node: [22]
+    name: 📝 🔢 Run TypeDoc with Node.js Version ${{ matrix.node }}
+    steps:
+      - name: 📂 Check out Git repository
+        uses: actions/checkout@v4
+
+      - name: 🛠️ Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: 🛠️ Set up Bun.sh
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: 📦 Install Node.js dependencies
+        run: npm ci
+
+      - name: 🏗️ 📝 Build Project Documentation
+        run: npm run docs
+      #Need to run dependency-version-badge and edit the readme file here as well.

@@ -1,0 +1,84 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "timezone": "America/Los_Angeles",
+  "schedule": ["after 9pm on sunday"],
+  "extends": [
+    "config:recommended",
+    ":gitSignOff",
+    ":dependencyDashboard"
+  ],
+  "assignees": ["@jebarpg"],
+  "osvVulnerabilityAlerts": true,
+  "vulnerabilityAlerts": {
+    "labels": ["🔒️ security"],
+    "automerge": true,
+    "enabled": true,
+    "semanticCommitType": ":lock: security"
+  },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "recreateWhen": "always",
+    "rebaseStalePrs": true,
+    "branchTopic": "lock-file-maintenance",
+    "commitMessageAction": "Lock file maintenance",
+    "commitMessageTopic": "null",
+    "commitMessageExtra": "null",
+    "schedule": ["before 4am on monday"],
+    "groupName": "null",
+    "prBodyDefinitions": { "Change": "All locks refreshed" }
+  },
+  "prBodyColumns": [
+    "Package",
+    "Update",
+    "Type",
+    "New value",
+    "Package file",
+    "References"
+  ],
+  "labels": ["📌 dependencies"],
+  "packageRules": [
+    {
+      "description": "semantic release currently needs to keep the version before <23 as of March 2024",
+      "matchPackageNames": ["semantic-release"],
+      "enabled": false
+    },
+    {
+      "description": "@typescript-eslint/eslint-plugin@7.8.0 currently doesn't support eslint v9.0.0+ as of May 3rd 2024 so preventing it from updating with renovate for now",
+      "matchPackageNames": ["eslint"],
+      "enabled": false
+    },
+    {
+      "description": "Automatically merge non-major updates silently with automergeType=branch instead of 'pr'",
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest",
+        "bump",
+        "rollback",
+        "lockFileMaintenance"
+      ],
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "updateTypes": [
+        "major", 
+        "minor", 
+        "patch", 
+        "digest", 
+        "lockFileMaintenance", 
+        "bump"
+      ],
+      "semanticCommitType": ":arrow_up: upgrade"
+    },
+    {
+      "updateTypes": ["pin"],
+      "semanticCommitType": ":pin: pushpin"
+    },
+    {
+      "updateTypes": ["rollback"],
+      "semanticCommitType": ":arrow_down: downgrade"
+    }
+  ]
+}

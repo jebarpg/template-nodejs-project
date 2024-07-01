@@ -1,0 +1,6 @@
+dist
+docs
+coverage
+commit-template.hbs
+default-template.hbs
+README.md

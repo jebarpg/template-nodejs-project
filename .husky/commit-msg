@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+#echo "commit-msg"
+#echo $1
+npx commitlint --edit $1

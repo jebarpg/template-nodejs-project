@@ -1,0 +1,43 @@
+name: 🧪 Test CI
+on:
+  workflow_call:
+    secrets:
+      token:
+        required: true
+      rootpass:
+        required: true
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    # Set a reasonable timeout, 120x shorter than GitHub's default 6 hours
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        node: [21, 22]
+    name: 🧪 🔢 Run Tests with Node.js Version ${{ matrix.node }}
+    steps:
+      - name: 📂 Check out Git repository
+        uses: actions/checkout@v4
+
+      - name: 🔧 Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: 📦 Install Node.js dependencies
+        run: npm ci
+      
+      # CHANGE/ADD/SETUP YOUR ADDITIONAL TEST COMMANDS AND TEST ACTIONS BELOW HERE:
+
+      - name: 🧪 📊 Test and coverage
+        run: npm run test
+
+      - name: 📤 📊 Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4.5.0
+        with:
+          fail_ci_if_error: true # optional (default = false)
+          files: ./coverage1.xml,./coverage2.xml # optional
+          flags: unittests # optional
+          name: ☂️ codecov-umbrella # optional
+          token: ${{ secrets.CODECOV_TOKEN }} # required
+          verbose: true # optional (default = false)

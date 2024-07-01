@@ -1,3 +1,7 @@
+# Created by https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,snyk
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,visualstudiocode,snyk
+
+### Node ###
 # Logs
 logs
 *.log
@@ -89,7 +93,8 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# since we release files in the dist directory we'll not ignore it.
+#dist
 
 # Gatsby files
 .cache/
@@ -102,7 +107,6 @@ dist
 
 # vuepress v2.x temp and cache directory
 .temp
-.cache
 
 # Docusaurus cache and generated files
 .docusaurus
@@ -128,3 +132,37 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+### Node Patch ###
+# Serverless Webpack directories
+.webpack/
+
+# Optional stylelint cache
+
+# SvelteKit build / generate output
+.svelte-kit
+
+### Snyk ###
+# DeepCode
+.dccache
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,snyk

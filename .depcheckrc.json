@@ -1,0 +1,21 @@
+{
+  "ignores": [
+    "jest-snapshot",
+    "quick-lint-js",
+    "prettier-plugin-organize-imports",
+    "typedoc",
+    "typedoc-plugin-coverage",
+    "@semantic-release/changelog",
+    "@semantic-release/git",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/release-notes-generator",
+    "commitlint",
+    "commitlint-config-gitmoji",
+    "conventional-changelog-gitmoji-config",
+    "nodemon",
+    "semantic-release-config-gitmoji",
+    "semantic-release-gitmoji"
+  ],
+  "quiet": true
+}

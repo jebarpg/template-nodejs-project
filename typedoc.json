@@ -1,0 +1,17 @@
+{
+  // Comments are supported, like tsconfig.json
+  "entryPointStrategy": "expand",
+  "entryPoints": ["./src", "./test", "."],
+  "exclude": [
+    "node_modules/**/*",
+    "dist/**/*",
+    "coverage/**/*",
+    "docs/**/*",
+    "public/**/*"
+  ],
+  "out": "docs/typedocs",
+  "name": "",
+  "includeVersion": true,
+  "hideGenerator": true,
+  "readme": "./README.md"
+}

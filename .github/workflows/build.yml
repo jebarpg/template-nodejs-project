@@ -1,0 +1,31 @@
+name: 🏗️ Build CI
+on:
+  workflow_call:
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    # Set a reasonable timeout, 120x shorter than GitHub's default 6 hours
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        node: [21, 22]
+    name: 🏗️ 🔢 Run Build with Node.js Version ${{ matrix.node }}
+    steps:
+      - name: 📂 Check out Git repository
+        uses: actions/checkout@v4
+
+      - name: 🛠️ Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: 🛠️ Set up Bun.sh
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: 📦 Install Node.js dependencies
+        run: npm ci
+
+      - name: 🏗️ Build project
+        run: npm run build
