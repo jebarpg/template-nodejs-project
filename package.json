@@ -207,7 +207,7 @@
     "snyk": "^1.1283.0",
     "sort-package-json": "2.8.0",
     "ts-jest": "29.1.2",
-    "typedoc": "0.25.12",
+    "typedoc": "0.26.3",
     "typedoc-plugin-coverage": "3.3.0"
   },
   "publishConfig": {
