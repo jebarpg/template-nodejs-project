@@ -1,27 +1,22 @@
 {
-    "cSpell.words": [
-        "ACDMRTUXB",
-        "automerge",
-        "bento",
-        "cacache",
-        "commitlint",
-        "debendabot",
-        "depcheckrc",
-        "esdoc",
-        "esdocs",
-        "gitmoji",
-        "iname",
-        "modclean",
-        "oxlint",
-        "shieldio",
-        "snyk",
-        "upgradeps"
-    ],
-    "spellright.language": [
-        "en"
-    ],
-    "spellright.documentTypes": [
-        "latex",
-        "plaintext"
-    ]
+  "cSpell.words": [
+    "ACDMRTUXB",
+    "automerge",
+    "bento",
+    "cacache",
+    "commitlint",
+    "debendabot",
+    "depcheckrc",
+    "esdoc",
+    "esdocs",
+    "gitmoji",
+    "iname",
+    "modclean",
+    "oxlint",
+    "shieldio",
+    "snyk",
+    "upgradeps"
+  ],
+  "spellright.language": ["en"],
+  "spellright.documentTypes": ["latex", "plaintext"]
 }

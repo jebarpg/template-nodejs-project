@@ -2,11 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "timezone": "America/Los_Angeles",
   "schedule": ["after 9pm on sunday"],
-  "extends": [
-    "config:recommended",
-    ":gitSignOff",
-    ":dependencyDashboard"
-  ],
+  "extends": ["config:recommended", ":gitSignOff", ":dependencyDashboard"],
   "assignees": ["@jebarpg"],
   "osvVulnerabilityAlerts": true,
   "vulnerabilityAlerts": {
@@ -38,12 +34,12 @@
   "labels": ["📌 dependencies"],
   "packageRules": [
     {
-      "description": "semantic release currently needs to keep the version before <23 as of March 2024",
+      "description": "semantic release currently needs to keep the version before <23 which is version 22.0.12 as of May 3rd 2024",
       "matchPackageNames": ["semantic-release"],
       "enabled": false
     },
     {
-      "description": "@typescript-eslint/eslint-plugin@7.8.0 currently doesn't support eslint v9.0.0+ as of May 3rd 2024 so preventing it from updating with renovate for now",
+      "description": "@typescript-eslint/eslint-plugin@7.8.0 currently doesn't support eslint v9.0.0+ as of May 3rd 2024 so use eslint:^8.57.0, and preventing it from updating with renovate for now",
       "matchPackageNames": ["eslint"],
       "enabled": false
     },
@@ -63,11 +59,11 @@
     },
     {
       "updateTypes": [
-        "major", 
-        "minor", 
-        "patch", 
-        "digest", 
-        "lockFileMaintenance", 
+        "major",
+        "minor",
+        "patch",
+        "digest",
+        "lockFileMaintenance",
         "bump"
       ],
       "semanticCommitType": ":arrow_up: upgrade"

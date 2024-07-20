@@ -1,4 +1,3 @@
-#!/usr/bin/env sh
 #echo "prepare-commit-msg"
 #echo $1
 trap cleanup ERR

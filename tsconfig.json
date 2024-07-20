@@ -15,9 +15,7 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
-    "types": [
-      "jest"
-    ],
+    "types": ["jest"],
     "outDir": "./dist",
     "esModuleInterop": true
   },
