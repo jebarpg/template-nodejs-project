@@ -6,7 +6,7 @@ import {
 
 export default {
   extends: ['gitmoji'],
-  parserPreset: '@gitmoji/parser-opts',
+  parserPreset: 'gitmoji-parser-opts',
   rules: {
     'body-leading-blank': [RuleConfigSeverity.Warning, 'always'] as const,
     // not setting any max-line-length since we are writing release-notes
