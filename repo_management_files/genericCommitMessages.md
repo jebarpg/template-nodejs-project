@@ -1,6 +1,6 @@
 # Generic Commit Messages
 
-If you are making a commit without using the `cz` commit or the `bun cm` or `bun cm2` scripts then these are handy to copy and used to format your commits with. 
+If you are making a commit without using the `cz` commit or the `bun cm` or `bun cm2` scripts then these are handy to copy and used to format your commits with.
 
 ## Examples of when you would use these
 
@@ -10,154 +10,563 @@ If you are making a commit without using the `cz` commit or the `bun cm` or `bun
 
 ## Scoped example
 
+```plaintext
 🐛 fix(scopeName): Message
+```
 
-## No Scope example
+## Non Scope example
 
+```plaintext
 🐛 fix: fixing merge
+```
 
 ## Emojis and Type names
 
 Click the type of message you would like to use below and copy into your commit message. Remember to change teh scope to the appropriate scope of your project if you choose a scoped message.
 
+{{< /*<!-- markdownlint-disable MD033 -->*/ >}}
 <details>
   <summary>Scoped</summary>
-🎨 style(scope):<br>
-⚡️ perf(scope):<br>
-🔥 prune(scope):<br>
-🐛 fix(scope):<br>
-🚑 quickfix(scope):<br>
-✨ feature(scope):<br>
-📝 docs(scope):<br>
-🚀 deploy(scope):<br>
-💄 ui(scope):<br>
-🎉 init(scope):<br>
-✅ test(scope):<br>
-🔒 security(scope):<br>
-🔖 release(scope):<br>
-🚨 lint(scope):<br>
-🚧 wip(scope):<br>
-💚 fix-ci(scope):<br>
-⬇️ downgrade(scope):<br>
-⬆️ upgrade(scope):<br>
-📌 pushpin(scope):<br>
-👷 ci(scope):<br>
-📈 analytics(scope):<br>
-♻️ refactoring(scope):<br>
-➕ dep-add(scope):<br>
-➖ dep-rm(scope):<br>
-🔧 config(scope):<br>
-🌐 i18n(scope):<br>
-✏️ typo(scope):<br>
-💩 poo(scope):<br>
-⏪ revert(scope):<br>
-🔀 merge(scope):<br>
-📦 dep-up(scope):<br>
-👽 compat(scope):<br>
-🚚 mv(scope):<br>
-📄 license(scope):<br>
-💥 breaking(scope):<br>
-🍱 assets(scope):<br>
-♿️ access(scope):<br>
-💡 docs-code(scope):<br>
-🍻 beer(scope):<br>
-💬 texts(scope):<br>
-🗃️ db(scope):<br>
-🔊 log-add(scope):<br>
-🔇 log-rm(scope):<br>
-👥 contrib-add(scope):<br>
-🚸 ux(scope):<br>
-🏗️ arch(scope):<br>
-📱 iphone(scope):<br>
-🤡 clown-face(scope):<br>
-🥚 egg(scope):<br>
-🙈 see-no-evil(scope):<br>
-📸 camera-flash(scope):<br>
-⚗️ experiment(scope):<br>
-🔍 seo(scope):<br>
-🏷️ types(scope):<br>
-🌱 seed(scope):<br>
-🚩 flags(scope):<br>
-💫 animation(scope):<br>
-🗑️ wastebasket(scope):<br>
-🛂 passport-control(scope):<br>
-🩹 adhesive-bandage(scope):<br>
-🧐 monocle-face(scope):<br>
-⚰️ coffin(scope):<br>
-🧪 test-tube(scope):<br>
-👔 necktie(scope):<br>
-🩺 stethoscope(scope):<br>
-🧱 bricks(scope):<br>
-🧑‍💻 technologist(scope):<br>
+
+```plaintext
+🎨 style(scope): 
+```
+
+```plaintext
+⚡️ perf(scope): 
+```
+
+```plaintext
+🔥 prune(scope): 
+```
+
+```plaintext
+🐛 fix(scope): 
+```
+
+```plaintext
+🚑 quickfix(scope): 
+```
+
+```plaintext
+✨ feature(scope): 
+```
+
+```plaintext
+📝 docs(scope): 
+```
+
+```plaintext
+🚀 deploy(scope): 
+```
+
+```plaintext
+💄 ui(scope): 
+```
+
+```plaintext
+🎉 init(scope): 
+```
+
+```plaintext
+✅ test(scope): 
+```
+
+```plaintext
+🔒 security(scope): 
+```
+
+```plaintext
+🔖 release(scope): 
+```
+
+```plaintext
+🚨 lint(scope): 
+```
+
+```plaintext
+🚧 wip(scope): 
+```
+
+```plaintext
+💚 fix-ci(scope): 
+```
+
+```plaintext
+⬇️ downgrade(scope): 
+```
+
+```plaintext
+⬆️ upgrade(scope): 
+```
+
+```plaintext
+📌 pushpin(scope): 
+```
+
+```plaintext
+👷 ci(scope): 
+```
+
+```plaintext
+📈 analytics(scope): 
+```
+
+```plaintext
+♻️ refactoring(scope): 
+```
+
+```plaintext
+➕ dep-add(scope): 
+```
+
+```plaintext
+➖ dep-rm(scope): 
+```
+
+```plaintext
+🔧 config(scope): 
+```
+
+```plaintext
+🌐 i18n(scope): 
+```
+
+```plaintext
+✏️ typo(scope): 
+```
+
+```plaintext
+💩 poo(scope): 
+```
+
+```plaintext
+⏪ revert(scope): 
+```
+
+```plaintext
+🔀 merge(scope): 
+```
+
+```plaintext
+📦 dep-up(scope): 
+```
+
+```plaintext
+👽 compat(scope): 
+```
+
+```plaintext
+🚚 mv(scope): 
+```
+
+```plaintext
+📄 license(scope): 
+```
+
+```plaintext
+💥 breaking(scope): 
+```
+
+```plaintext
+🍱 assets(scope): 
+```
+
+```plaintext
+♿️ access(scope): 
+```
+
+```plaintext
+💡 docs-code(scope): 
+```
+
+```plaintext
+🍻 beer(scope): 
+```
+
+```plaintext
+💬 texts(scope): 
+```
+
+```plaintext
+🗃️ db(scope): 
+```
+
+```plaintext
+🔊 log-add(scope): 
+```
+
+```plaintext
+🔇 log-rm(scope): 
+```
+
+```plaintext
+👥 contrib-add(scope): 
+```
+
+```plaintext
+🚸 ux(scope): 
+```
+
+```plaintext
+🏗️ arch(scope): 
+```
+
+```plaintext
+📱 iphone(scope): 
+```
+
+```plaintext
+🤡 clown-face(scope): 
+```
+
+```plaintext
+🥚 egg(scope): 
+```
+
+```plaintext
+🙈 see-no-evil(scope): 
+```
+
+```plaintext
+📸 camera-flash(scope): 
+```
+
+```plaintext
+⚗️ experiment(scope): 
+```
+
+```plaintext
+🔍 seo(scope): 
+```
+
+```plaintext
+🏷️ types(scope): 
+```
+
+```plaintext
+🌱 seed(scope): 
+```
+
+```plaintext
+🚩 flags(scope): 
+```
+
+```plaintext
+💫 animation(scope): 
+```
+
+```plaintext
+🗑️ wastebasket(scope): 
+```
+
+```plaintext
+🛂 passport-control(scope): 
+```
+
+```plaintext
+🩹 adhesive-bandage(scope): 
+```
+
+```plaintext
+🧐 monocle-face(scope): 
+```
+
+```plaintext
+⚰️ coffin(scope): 
+```
+
+```plaintext
+🧪 test-tube(scope): 
+```
+
+```plaintext
+👔 necktie(scope): 
+```
+
+```plaintext
+🩺 stethoscope(scope): 
+```
+
+```plaintext
+🧱 bricks(scope): 
+```
+
+```plaintext
+🧑‍💻 technologist(scope): 
+```
+
 </details>
 
 <details>
-  <summary>No Scope</summary>
-🎨 style:<br>
-⚡️ perf:<br>
-🔥 prune:<br>
-🐛 fix:<br>
-🚑 quickfix:<br>
-✨ feature:<br>
-📝 docs:<br>
-🚀 deploy:<br>
-💄 ui:<br>
-🎉 init:<br>
-✅ test:<br>
-🔒 security:<br>
-🔖 release:<br>
-🚨 lint:<br>
-🚧 wip:<br>
-💚 fix-ci:<br>
-⬇️ downgrade:<br>
-⬆️ upgrade:<br>
-📌 pushpin:<br>
-👷 ci:<br>
-📈 analytics:<br>
-♻️ refactoring:<br>
-➕ dep-add:<br>
-➖ dep-rm:<br>
-🔧 config:<br>
-🌐 i18n:<br>
-✏️ typo:<br>
-💩 poo:<br>
-⏪ revert:<br>
-🔀 merge:<br>
-📦 dep-up:<br>
-👽 compat:<br>
-🚚 mv:<br>
-📄 license:<br>
-💥 breaking:<br>
-🍱 assets:<br>
-♿️ access:<br>
-💡 docs-code:<br>
-🍻 beer:<br>
-💬 texts:<br>
-🗃️ db:<br>
-🔊 log-add:<br>
-🔇 log-rm:<br>
-👥 contrib-add:<br>
-🚸 ux:<br>
-🏗️ arch:<br>
-📱 iphone:<br>
-🤡 clown-face:<br>
-🥚 egg:<br>
-🙈 see-no-evil:<br>
-📸 camera-flash:<br>
-⚗️ experiment:<br>
-🔍 seo:<br>
-🏷️ types:<br>
-🌱 seed:<br>
-🚩 flags:<br>
-💫 animation:<br>
-🗑️ wastebasket:<br>
-🛂 passport-control:<br>
-🩹 adhesive-bandage:<br>
-🧐 monocle-face:<br>
-⚰️ coffin:<br>
-🧪 test-tube:<br>
-👔 necktie:<br>
-🩺 stethoscope:<br>
-🧱 bricks:<br>
-🧑‍💻 technologist:<br>
+  <summary>Non-Scope</summary>
+
+```plaintext
+🎨 style: 
+```
+
+```plaintext
+⚡️ perf: 
+```
+
+```plaintext
+🔥 prune: 
+```
+
+```plaintext
+🐛 fix: 
+```
+
+```plaintext
+🚑 quickfix: 
+```
+
+```plaintext
+✨ feature: 
+```
+
+```plaintext
+📝 docs: 
+```
+
+```plaintext
+🚀 deploy: 
+```
+
+```plaintext
+💄 ui: 
+```
+
+```plaintext
+🎉 init: 
+```
+
+```plaintext
+✅ test: 
+```
+
+```plaintext
+🔒 security: 
+```
+
+```plaintext
+🔖 release: 
+```
+
+```plaintext
+🚨 lint: 
+```
+
+```plaintext
+🚧 wip: 
+```
+
+```plaintext
+💚 fix-ci: 
+```
+
+```plaintext
+⬇️ downgrade: 
+```
+
+```plaintext
+⬆️ upgrade: 
+```
+
+```plaintext
+📌 pushpin: 
+```
+
+```plaintext
+👷 ci: 
+```
+
+```plaintext
+📈 analytics: 
+```
+
+```plaintext
+♻️ refactoring: 
+```
+
+```plaintext
+➕ dep-add: 
+```
+
+```plaintext
+➖ dep-rm: 
+```
+
+```plaintext
+🔧 config: 
+```
+
+```plaintext
+🌐 i18n: 
+```
+
+```plaintext
+✏️ typo: 
+```
+
+```plaintext
+💩 poo: 
+```
+
+```plaintext
+⏪ revert: 
+```
+
+```plaintext
+🔀 merge: 
+```
+
+```plaintext
+📦 dep-up: 
+```
+
+```plaintext
+👽 compat: 
+```
+
+```plaintext
+🚚 mv: 
+```
+
+```plaintext
+📄 license: 
+```
+
+```plaintext
+💥 breaking: 
+```
+
+```plaintext
+🍱 assets: 
+```
+
+```plaintext
+♿️ access: 
+```
+
+```plaintext
+💡 docs-code: 
+```
+
+```plaintext
+🍻 beer: 
+```
+
+```plaintext
+💬 texts: 
+```
+
+```plaintext
+🗃️ db: 
+```
+
+```plaintext
+🔊 log-add: 
+```
+
+```plaintext
+🔇 log-rm: 
+```
+
+```plaintext
+👥 contrib-add: 
+```
+
+```plaintext
+🚸 ux: 
+```
+
+```plaintext
+🏗️ arch: 
+```
+
+```plaintext
+📱 iphone: 
+```
+
+```plaintext
+🤡 clown-face: 
+```
+
+```plaintext
+🥚 egg: 
+```
+
+```plaintext
+🙈 see-no-evil: 
+```
+
+```plaintext
+📸 camera-flash: 
+```
+
+```plaintext
+⚗️ experiment: 
+```
+
+```plaintext
+🔍 seo: 
+```
+
+```plaintext
+🏷️ types: 
+```
+
+```plaintext
+🌱 seed: 
+```
+
+```plaintext
+🚩 flags: 
+```
+
+```plaintext
+💫 animation: 
+```
+
+```plaintext
+🗑️ wastebasket: 
+```
+
+```plaintext
+🛂 passport-control: 
+```
+
+```plaintext
+🩹 adhesive-bandage: 
+```
+
+```plaintext
+🧐 monocle-face: 
+```
+
+```plaintext
+⚰️ coffin: 
+```
+
+```plaintext
+🧪 test-tube: 
+```
+
+```plaintext
+👔 necktie: 
+```
+
+```plaintext
+🩺 stethoscope: 
+```
+
+```plaintext
+🧱 bricks: 
+```
+
+```plaintext
+🧑‍💻 technologist: 
+```
+
 </details>

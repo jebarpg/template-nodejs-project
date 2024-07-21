@@ -16,19 +16,23 @@ get(url, (res) => {
     try {
       const json = JSON.parse(body);
 
-      let content = '<details>\n  <summary>Scoped</summary>\n';
+      let content = '<details>\n  <summary>Scoped</summary>\n\n';
       for (const i in json) {
         const emoji = json[i].emoji;
         const name = json[i].name;
-        content += `${emoji} ${name}(scope):<br>\n`;
+        content += '```plaintext\n';
+        content += `${emoji} ${name}(scope): \n`;
+        content += '```\n\n';
       }
-      content += `</details>\n\n<details>\n  <summary>No Scope</summary>\n`;
+      content += `</details>\n\n<details>\n  <summary>Non-Scope</summary>\n\n`;
       for (const i in json) {
         const emoji = json[i].emoji;
         const name = json[i].name;
-        content += `${emoji} ${name}:<br>\n`;
+        content += '```plaintext\n';
+        content += `${emoji} ${name}: \n`;
+        content += '```\n\n';
       }
-      content += `</details>`
+      content += `</details>\n`
       writeFile('emojiTypesCommitMessages.txt', content, (err) => {
         if (err) {
           console.error(err);

@@ -22,9 +22,17 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
+      - name: 🛠️ Set up Bun.sh
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
       # ESLint and Prettier must be in `package.json`
-      - name: 📦 Install Node.js dependencies
+      - name: 📦 Install Node.js dependencies with Node.js
         run: npm ci
+
+      - name: 📦 Install Node.js dependencies with Bun
+        run: bun install --frozen-lockfile
 
       - name: 🧹 🎨 Run linters and formatting
         uses: wearerequired/lint-action@v2

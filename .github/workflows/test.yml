@@ -23,14 +23,25 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
+      
+      - name: 🛠️ Set up Bun.sh
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
 
       - name: 📦 Install Node.js dependencies
         run: npm ci
+
+      - name: 📦 Install Node.js dependencies with Bun
+        run: bun install --frozen-lockfile
 
       # CHANGE/ADD/SETUP YOUR ADDITIONAL TEST COMMANDS AND TEST ACTIONS BELOW HERE:
 
       - name: 🧪 📊 Test and coverage
         run: npm run test
+
+      - name: 🧪 📊 Test and coverage with Bun
+        run: bun run test
 
       - name: 📤 📊 Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4.5.0

@@ -16,6 +16,10 @@ const directoryPath = path.normalize(__dirname + '/../');
 // Exclude auto generated files and directories.
 const exclude = ['.dccache', '.git', 'node_modules', 'dist', 'coverage', 'CHANGELOG.md', 'bun.lockb', 'docs'];
 
+function escapeRegExp(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // Escapes special characters in the input
+}
+
 /**
  * Removes absolute path sub-string from a main string.
  * 
@@ -25,12 +29,17 @@ const exclude = ['.dccache', '.git', 'node_modules', 'dist', 'coverage', 'CHANGE
  * @return {string} The resulting lower case string after removing all occurrences of the absolute path sub-string.
  */
 function removeAbsolutePathToLowerCase(mainString) {
-    // Create a regular expression to match all occurrences of the subString 
-    const regex = new RegExp(directoryPath, 'g');
+
+    const MAX_QUERY_LENGTH = 1000; // set a reasonable upper limit on query length
+
+    const escapedQuery = directoryPath.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+
+    // Create a regular expression to match all occurrences of the subString
+    const re = new RegExp('(?:' + escapedQuery + '){1,' + MAX_QUERY_LENGTH + '}', 'ig');
 
     // Replace all occurrences of subString with an empty string
 
-    return mainString.replace(regex, '').toLowerCase();
+    return mainString.replace(re, '').toLowerCase();
 }
 
 /**
@@ -136,3 +145,4 @@ listFilesAndDirectories(directoryPath, exclude)
     .catch(err => {
         console.error('Error:', err);
     })
+    

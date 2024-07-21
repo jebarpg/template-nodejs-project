@@ -5,6 +5,7 @@
     "bento",
     "cacache",
     "commitlint",
+    "compat",
     "debendabot",
     "depcheckrc",
     "esdoc",
@@ -13,6 +14,7 @@
     "iname",
     "modclean",
     "oxlint",
+    "quickfix",
     "shieldio",
     "snyk",
     "upgradeps"

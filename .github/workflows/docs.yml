@@ -20,13 +20,16 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: 🛠️ Set up Bun.sh
-        uses: oven-sh/setup-bun@v1
+        uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
 
-      - name: 📦 Install Node.js dependencies
+      - name: 📦 Install Node.js dependencies with Node.js
         run: npm ci
 
+      - name: 📦 Install Node.js dependencies with Bun
+        run: bun install --frozen-lockfile
+
       - name: 🏗️ 📝 Build Project Documentation
-        run: npm run docs
+        run: bun run docs
       #Need to run dependency-version-badge and edit the readme file here as well.
