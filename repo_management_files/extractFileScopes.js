@@ -6,6 +6,8 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+// TODO First extract the current scopes and keep any scopes that were manually added in without completely overwriting them with the new file list scope array.
+
 // Project root directory, back one directory from repo_management_files.
 // normalize the 'directoryPath' string to go from the form `/absolute_path/template-nodes-project/repo_management_files/../`
 // to `/absolute_path/template-nodes-project/` to subtract from the beginning of the filePath
@@ -15,15 +17,14 @@ const directoryPath = path.normalize(__dirname + '/../');
 const exclude = ['.dccache', '.git', 'node_modules', 'dist', 'coverage', 'CHANGELOG.md', 'bun.lockb', 'docs'];
 
 /**
- * Subtracts all occurrences of a sub-string from a main string.
+ * Removes absolute path sub-string from a main string.
  * 
- * This function takes two strings as input: a main string and a sub-string.
- * It removes all occurrences of the sub-string from the main string.
+ * This function removes all occurrences of the absolute path to the project directory from the main string.
  * 
- * @param {string} mainString - The main string from which sub-string will be removed.
- * @return {string} The resulting string after removing all occurrences of the sub-string.
+ * @param {string} mainString - The main string from which absolute path sub-string will be removed.
+ * @return {string} The resulting lower case string after removing all occurrences of the absolute path sub-string.
  */
-function subtractStrings(mainString) {
+function removeAbsolutePathToLowerCase(mainString) {
     // Create a regular expression to match all occurrences of the subString 
     const regex = new RegExp(directoryPath, 'g');
 
@@ -31,7 +32,6 @@ function subtractStrings(mainString) {
 
     return mainString.replace(regex, '').toLowerCase();
 }
-
 
 /**
  * Lists all files and directories in a directory excluding specified items.
@@ -83,7 +83,6 @@ function listFilesAndDirectories(dirPath, excludeList) {
     });
 }
 
-
 /**
  * Updates the scopes array in the package.json file.
  *
@@ -129,9 +128,10 @@ function updateScopesInPackageJson(packageJsonPath, newScopes) {
     });
 }
 
+// scan all the files not in the exlude list and then update the package.json scopes array
 listFilesAndDirectories(directoryPath, exclude)
     .then(fileScopes => {
-        updateScopesInPackageJson(directoryPath + 'package.json', fileScopes.map(subtractStrings));
+        updateScopesInPackageJson(directoryPath + 'package.json', fileScopes.map(removeAbsolutePathToLowerCase));
     })
     .catch(err => {
         console.error('Error:', err);
