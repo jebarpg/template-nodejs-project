@@ -24,7 +24,7 @@ If you are making a commit without using the `cz` commit or the `bun cm` or `bun
 
 Click the type of message you would like to use below and copy into your commit message. Remember to change teh scope to the appropriate scope of your project if you choose a scoped message.
 
-{{< /*<!-- markdownlint-disable MD033 -->*/ >}}
+<!-- markdownlint-disable MD033 -->
 <details>
   <summary>Scoped</summary>
 
