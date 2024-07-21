@@ -32,7 +32,7 @@ get(url, (res) => {
         content += `${emoji} ${name}: \n`;
         content += '```\n\n';
       }
-      content += `</details>\n`
+      content += `</details>\n`;
       writeFile('emojiTypesCommitMessages.txt', content, (err) => {
         if (err) {
           console.error(err);

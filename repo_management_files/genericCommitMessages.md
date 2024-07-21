@@ -4,9 +4,9 @@ If you are making a commit without using the `cz` commit or the `bun cm` or `bun
 
 ## Examples of when you would use these
 
-* Doing a merge in Visual Studio Code and are prompted with VIM to enter a message.
-* When you need to do a manual `git commit -m ""` on the CLI.
-* When you are using the Visual Studio Code Source Control tab to make a commit using it's message text box.
+- Doing a merge in Visual Studio Code and are prompted with VIM to enter a message.
+- When you need to do a manual `git commit -m ""` on the CLI.
+- When you are using the Visual Studio Code Source Control tab to make a commit using it's message text box.
 
 ## Scoped example
 
@@ -29,271 +29,271 @@ Click the type of message you would like to use below and copy into your commit 
   <summary>Scoped</summary>
 
 ```plaintext
-🎨 style(scope): 
+🎨 style(scope):
 ```
 
 ```plaintext
-⚡️ perf(scope): 
+⚡️ perf(scope):
 ```
 
 ```plaintext
-🔥 prune(scope): 
+🔥 prune(scope):
 ```
 
 ```plaintext
-🐛 fix(scope): 
+🐛 fix(scope):
 ```
 
 ```plaintext
-🚑 quickfix(scope): 
+🚑 quickfix(scope):
 ```
 
 ```plaintext
-✨ feature(scope): 
+✨ feature(scope):
 ```
 
 ```plaintext
-📝 docs(scope): 
+📝 docs(scope):
 ```
 
 ```plaintext
-🚀 deploy(scope): 
+🚀 deploy(scope):
 ```
 
 ```plaintext
-💄 ui(scope): 
+💄 ui(scope):
 ```
 
 ```plaintext
-🎉 init(scope): 
+🎉 init(scope):
 ```
 
 ```plaintext
-✅ test(scope): 
+✅ test(scope):
 ```
 
 ```plaintext
-🔒 security(scope): 
+🔒 security(scope):
 ```
 
 ```plaintext
-🔖 release(scope): 
+🔖 release(scope):
 ```
 
 ```plaintext
-🚨 lint(scope): 
+🚨 lint(scope):
 ```
 
 ```plaintext
-🚧 wip(scope): 
+🚧 wip(scope):
 ```
 
 ```plaintext
-💚 fix-ci(scope): 
+💚 fix-ci(scope):
 ```
 
 ```plaintext
-⬇️ downgrade(scope): 
+⬇️ downgrade(scope):
 ```
 
 ```plaintext
-⬆️ upgrade(scope): 
+⬆️ upgrade(scope):
 ```
 
 ```plaintext
-📌 pushpin(scope): 
+📌 pushpin(scope):
 ```
 
 ```plaintext
-👷 ci(scope): 
+👷 ci(scope):
 ```
 
 ```plaintext
-📈 analytics(scope): 
+📈 analytics(scope):
 ```
 
 ```plaintext
-♻️ refactoring(scope): 
+♻️ refactoring(scope):
 ```
 
 ```plaintext
-➕ dep-add(scope): 
+➕ dep-add(scope):
 ```
 
 ```plaintext
-➖ dep-rm(scope): 
+➖ dep-rm(scope):
 ```
 
 ```plaintext
-🔧 config(scope): 
+🔧 config(scope):
 ```
 
 ```plaintext
-🌐 i18n(scope): 
+🌐 i18n(scope):
 ```
 
 ```plaintext
-✏️ typo(scope): 
+✏️ typo(scope):
 ```
 
 ```plaintext
-💩 poo(scope): 
+💩 poo(scope):
 ```
 
 ```plaintext
-⏪ revert(scope): 
+⏪ revert(scope):
 ```
 
 ```plaintext
-🔀 merge(scope): 
+🔀 merge(scope):
 ```
 
 ```plaintext
-📦 dep-up(scope): 
+📦 dep-up(scope):
 ```
 
 ```plaintext
-👽 compat(scope): 
+👽 compat(scope):
 ```
 
 ```plaintext
-🚚 mv(scope): 
+🚚 mv(scope):
 ```
 
 ```plaintext
-📄 license(scope): 
+📄 license(scope):
 ```
 
 ```plaintext
-💥 breaking(scope): 
+💥 breaking(scope):
 ```
 
 ```plaintext
-🍱 assets(scope): 
+🍱 assets(scope):
 ```
 
 ```plaintext
-♿️ access(scope): 
+♿️ access(scope):
 ```
 
 ```plaintext
-💡 docs-code(scope): 
+💡 docs-code(scope):
 ```
 
 ```plaintext
-🍻 beer(scope): 
+🍻 beer(scope):
 ```
 
 ```plaintext
-💬 texts(scope): 
+💬 texts(scope):
 ```
 
 ```plaintext
-🗃️ db(scope): 
+🗃️ db(scope):
 ```
 
 ```plaintext
-🔊 log-add(scope): 
+🔊 log-add(scope):
 ```
 
 ```plaintext
-🔇 log-rm(scope): 
+🔇 log-rm(scope):
 ```
 
 ```plaintext
-👥 contrib-add(scope): 
+👥 contrib-add(scope):
 ```
 
 ```plaintext
-🚸 ux(scope): 
+🚸 ux(scope):
 ```
 
 ```plaintext
-🏗️ arch(scope): 
+🏗️ arch(scope):
 ```
 
 ```plaintext
-📱 iphone(scope): 
+📱 iphone(scope):
 ```
 
 ```plaintext
-🤡 clown-face(scope): 
+🤡 clown-face(scope):
 ```
 
 ```plaintext
-🥚 egg(scope): 
+🥚 egg(scope):
 ```
 
 ```plaintext
-🙈 see-no-evil(scope): 
+🙈 see-no-evil(scope):
 ```
 
 ```plaintext
-📸 camera-flash(scope): 
+📸 camera-flash(scope):
 ```
 
 ```plaintext
-⚗️ experiment(scope): 
+⚗️ experiment(scope):
 ```
 
 ```plaintext
-🔍 seo(scope): 
+🔍 seo(scope):
 ```
 
 ```plaintext
-🏷️ types(scope): 
+🏷️ types(scope):
 ```
 
 ```plaintext
-🌱 seed(scope): 
+🌱 seed(scope):
 ```
 
 ```plaintext
-🚩 flags(scope): 
+🚩 flags(scope):
 ```
 
 ```plaintext
-💫 animation(scope): 
+💫 animation(scope):
 ```
 
 ```plaintext
-🗑️ wastebasket(scope): 
+🗑️ wastebasket(scope):
 ```
 
 ```plaintext
-🛂 passport-control(scope): 
+🛂 passport-control(scope):
 ```
 
 ```plaintext
-🩹 adhesive-bandage(scope): 
+🩹 adhesive-bandage(scope):
 ```
 
 ```plaintext
-🧐 monocle-face(scope): 
+🧐 monocle-face(scope):
 ```
 
 ```plaintext
-⚰️ coffin(scope): 
+⚰️ coffin(scope):
 ```
 
 ```plaintext
-🧪 test-tube(scope): 
+🧪 test-tube(scope):
 ```
 
 ```plaintext
-👔 necktie(scope): 
+👔 necktie(scope):
 ```
 
 ```plaintext
-🩺 stethoscope(scope): 
+🩺 stethoscope(scope):
 ```
 
 ```plaintext
-🧱 bricks(scope): 
+🧱 bricks(scope):
 ```
 
 ```plaintext
-🧑‍💻 technologist(scope): 
+🧑‍💻 technologist(scope):
 ```
 
 </details>
@@ -302,271 +302,271 @@ Click the type of message you would like to use below and copy into your commit 
   <summary>Non-Scope</summary>
 
 ```plaintext
-🎨 style: 
+🎨 style:
 ```
 
 ```plaintext
-⚡️ perf: 
+⚡️ perf:
 ```
 
 ```plaintext
-🔥 prune: 
+🔥 prune:
 ```
 
 ```plaintext
-🐛 fix: 
+🐛 fix:
 ```
 
 ```plaintext
-🚑 quickfix: 
+🚑 quickfix:
 ```
 
 ```plaintext
-✨ feature: 
+✨ feature:
 ```
 
 ```plaintext
-📝 docs: 
+📝 docs:
 ```
 
 ```plaintext
-🚀 deploy: 
+🚀 deploy:
 ```
 
 ```plaintext
-💄 ui: 
+💄 ui:
 ```
 
 ```plaintext
-🎉 init: 
+🎉 init:
 ```
 
 ```plaintext
-✅ test: 
+✅ test:
 ```
 
 ```plaintext
-🔒 security: 
+🔒 security:
 ```
 
 ```plaintext
-🔖 release: 
+🔖 release:
 ```
 
 ```plaintext
-🚨 lint: 
+🚨 lint:
 ```
 
 ```plaintext
-🚧 wip: 
+🚧 wip:
 ```
 
 ```plaintext
-💚 fix-ci: 
+💚 fix-ci:
 ```
 
 ```plaintext
-⬇️ downgrade: 
+⬇️ downgrade:
 ```
 
 ```plaintext
-⬆️ upgrade: 
+⬆️ upgrade:
 ```
 
 ```plaintext
-📌 pushpin: 
+📌 pushpin:
 ```
 
 ```plaintext
-👷 ci: 
+👷 ci:
 ```
 
 ```plaintext
-📈 analytics: 
+📈 analytics:
 ```
 
 ```plaintext
-♻️ refactoring: 
+♻️ refactoring:
 ```
 
 ```plaintext
-➕ dep-add: 
+➕ dep-add:
 ```
 
 ```plaintext
-➖ dep-rm: 
+➖ dep-rm:
 ```
 
 ```plaintext
-🔧 config: 
+🔧 config:
 ```
 
 ```plaintext
-🌐 i18n: 
+🌐 i18n:
 ```
 
 ```plaintext
-✏️ typo: 
+✏️ typo:
 ```
 
 ```plaintext
-💩 poo: 
+💩 poo:
 ```
 
 ```plaintext
-⏪ revert: 
+⏪ revert:
 ```
 
 ```plaintext
-🔀 merge: 
+🔀 merge:
 ```
 
 ```plaintext
-📦 dep-up: 
+📦 dep-up:
 ```
 
 ```plaintext
-👽 compat: 
+👽 compat:
 ```
 
 ```plaintext
-🚚 mv: 
+🚚 mv:
 ```
 
 ```plaintext
-📄 license: 
+📄 license:
 ```
 
 ```plaintext
-💥 breaking: 
+💥 breaking:
 ```
 
 ```plaintext
-🍱 assets: 
+🍱 assets:
 ```
 
 ```plaintext
-♿️ access: 
+♿️ access:
 ```
 
 ```plaintext
-💡 docs-code: 
+💡 docs-code:
 ```
 
 ```plaintext
-🍻 beer: 
+🍻 beer:
 ```
 
 ```plaintext
-💬 texts: 
+💬 texts:
 ```
 
 ```plaintext
-🗃️ db: 
+🗃️ db:
 ```
 
 ```plaintext
-🔊 log-add: 
+🔊 log-add:
 ```
 
 ```plaintext
-🔇 log-rm: 
+🔇 log-rm:
 ```
 
 ```plaintext
-👥 contrib-add: 
+👥 contrib-add:
 ```
 
 ```plaintext
-🚸 ux: 
+🚸 ux:
 ```
 
 ```plaintext
-🏗️ arch: 
+🏗️ arch:
 ```
 
 ```plaintext
-📱 iphone: 
+📱 iphone:
 ```
 
 ```plaintext
-🤡 clown-face: 
+🤡 clown-face:
 ```
 
 ```plaintext
-🥚 egg: 
+🥚 egg:
 ```
 
 ```plaintext
-🙈 see-no-evil: 
+🙈 see-no-evil:
 ```
 
 ```plaintext
-📸 camera-flash: 
+📸 camera-flash:
 ```
 
 ```plaintext
-⚗️ experiment: 
+⚗️ experiment:
 ```
 
 ```plaintext
-🔍 seo: 
+🔍 seo:
 ```
 
 ```plaintext
-🏷️ types: 
+🏷️ types:
 ```
 
 ```plaintext
-🌱 seed: 
+🌱 seed:
 ```
 
 ```plaintext
-🚩 flags: 
+🚩 flags:
 ```
 
 ```plaintext
-💫 animation: 
+💫 animation:
 ```
 
 ```plaintext
-🗑️ wastebasket: 
+🗑️ wastebasket:
 ```
 
 ```plaintext
-🛂 passport-control: 
+🛂 passport-control:
 ```
 
 ```plaintext
-🩹 adhesive-bandage: 
+🩹 adhesive-bandage:
 ```
 
 ```plaintext
-🧐 monocle-face: 
+🧐 monocle-face:
 ```
 
 ```plaintext
-⚰️ coffin: 
+⚰️ coffin:
 ```
 
 ```plaintext
-🧪 test-tube: 
+🧪 test-tube:
 ```
 
 ```plaintext
-👔 necktie: 
+👔 necktie:
 ```
 
 ```plaintext
-🩺 stethoscope: 
+🩺 stethoscope:
 ```
 
 ```plaintext
-🧱 bricks: 
+🧱 bricks:
 ```
 
 ```plaintext
-🧑‍💻 technologist: 
+🧑‍💻 technologist:
 ```
 
 </details>
