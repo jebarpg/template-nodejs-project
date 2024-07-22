@@ -31,5 +31,5 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: 🔍🔗 Check Project Unused Dependencies
-        run: bun run depcheck
+        run: bun run depcheck:ci
       #Need to run dependency-version-badge and edit the readme file here as well.
