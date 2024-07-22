@@ -1,2 +1,4 @@
 # validate branch name before commit
-npx validate-branch-name 
+
+npx validate-branch-name
+bun run depcheck:ci
