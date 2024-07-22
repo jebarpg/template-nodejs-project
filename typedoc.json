@@ -1,7 +1,7 @@
 {
   // Comments are supported, like tsconfig.json
   "entryPointStrategy": "expand",
-  "entryPoints": ["./src", "./test", "."],
+  "entryPoints": ["./src"],
   "exclude": [
     "node_modules/**/*",
     "dist/**/*",
@@ -9,9 +9,11 @@
     "docs/**/*",
     "public/**/*"
   ],
-  "out": "docs/typedocs",
+  "customTitle": "Template NodeJS Project",
+  "titleLink": "https://jebarpg.github.io/template-nodejs-project/",
   "name": "",
   "includeVersion": true,
   "hideGenerator": true,
-  "readme": "./README.md"
+  "out": "docs/typedocs",
+  "readme": "./README-api.md"
 }

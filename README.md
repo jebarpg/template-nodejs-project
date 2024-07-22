@@ -2,6 +2,8 @@
 
 ## How to use
 
+NOTE: It is best to have created a github organization to use this template. There are a few features which require it. Namely publishing of typedocs to github_pages and the dependabot security features for organizations. Start reading [Creating a new organization from scratch](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch) to learn.
+
 This is my recommended way to use this template repo. By doing this you'll be able to use the gitmoji commitizen adapter to add your initial commit message with a gitmoji icon which will later be used to create the changelog automatically.
 
 *If you don't care about using gitmoji on your initial commit then you can simply click the `Use this template` button and select `Create a new repository`. [Here are the instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) to use this GitHub Template. Otherwise continue reading.*
