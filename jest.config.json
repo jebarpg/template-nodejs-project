@@ -1,7 +1,13 @@
 {
   "clearMocks": true,
   "collectCoverage": true,
+  "collectCoverageFrom": ["./src/**"],
   "coverageDirectory": "coverage",
+  "coverageThreshold": {
+    "global": {
+      "lines": 90
+    }
+  },
   "coverageProvider": "v8",
   "extensionsToTreatAsEsm": [".ts"],
   "testTimeout": 20000,

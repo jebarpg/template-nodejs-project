@@ -1,2 +1,3 @@
-//Code below
-console.log("hello world!")
+export default function sum(a: any, b: any) {
+  return a + b;
+}

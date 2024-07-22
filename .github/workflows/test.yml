@@ -32,24 +32,20 @@ jobs:
       - name: 📦 Install Node.js dependencies
         run: npm ci
 
-      - name: 📦 Install Node.js dependencies with Bun
-        run: bun install --frozen-lockfile
-
       # CHANGE/ADD/SETUP YOUR ADDITIONAL TEST COMMANDS AND TEST ACTIONS BELOW HERE:
 
       - name: 🧪 📊 Test and coverage
-        run: npm run test
-
-      - name: 🧪 📊 Test and coverage with Bun
-        run: bun run test
+        run: npm test
 
       - name: 📤 📊 Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4.0.1
         with:
-          #token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
-          #fail_ci_if_error: true # optional (default = false)
-          #file: ./coverage.xml # optional
-          #files: ./coverage1.xml,./coverage2.xml # optional
-          #flags: unittests # optional
+          # token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+          # file: ./coverage.xml # optional
+          # files: ./coverage1.xml,./coverage2.xml # optional
+          # directory: ./coverage/reports/ # optional
+          # flags: unittests # optional
+          # env_vars: OS,PYTHON  # optional
           name: ☂️ codecov-umbrella # optional
+          # fail_ci_if_error: true # optional (default = false)
           verbose: true # optional (default = false)

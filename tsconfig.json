@@ -3,7 +3,7 @@
     "lib": ["ESNext"],
     "module": "ESNext",
     "target": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "Node",
     "moduleDetection": "force",
     "allowImportingTsExtensions": true,
     "noEmit": true,
