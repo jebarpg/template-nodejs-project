@@ -40,7 +40,7 @@ jobs:
       - name: 📤 📊 Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4
         env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+          CODECOV_TOKEN: ${{ secrets.token }}
         with:
           # token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
           # file: ./coverage.xml # optional
