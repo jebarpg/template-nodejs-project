@@ -39,15 +39,13 @@ jobs:
 
       - name: 📤 📊 Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4
-        env:
-          CODECOV_TOKEN: ${{ secrets.token }}
         with:
-          # token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+          token: ${{ secrets.token }} # not required for public repos
           # file: ./coverage.xml # optional
           # files: ./coverage1.xml,./coverage2.xml # optional
-          # directory: ./coverage/reports/ # optional
-          # flags: unittests # optional
-          # env_vars: OS,PYTHON  # optional
+          directory: ./coverage/lcov-report/ # optional
+          flags: unittests # optional
+          # env_vars: OS,NODE  # optional
           name: ☂️ codecov-umbrella # optional
-          # fail_ci_if_error: true # optional (default = false)
+          fail_ci_if_error: true # optional (default = false)
           verbose: true # optional (default = false)
