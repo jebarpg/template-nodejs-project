@@ -32,4 +32,4 @@ jobs:
 
       - name: 🏗️ 📝 Build Project Documentation
         run: bun run docs
-      #Need to run dependency-version-badge and edit the readme file here as well.
+      #TODO: Need to run dependency-version-badge and edit the readme file here as well.

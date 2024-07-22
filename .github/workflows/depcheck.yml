@@ -32,4 +32,3 @@ jobs:
 
       - name: 🔍🔗 Check Project Unused Dependencies
         run: bun run depcheck:ci
-      #Need to run dependency-version-badge and edit the readme file here as well.

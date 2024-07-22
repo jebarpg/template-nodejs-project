@@ -1,10 +1,12 @@
 {
   "ignores": [
+    "gitmoji-parser-opts",
     "jest-snapshot",
     "quick-lint-js",
     "prettier-plugin-organize-imports",
     "typedoc",
     "typedoc-plugin-coverage",
+    "typedoc-plugin-extras",
     "@semantic-release/changelog",
     "@semantic-release/git",
     "@semantic-release/github",
