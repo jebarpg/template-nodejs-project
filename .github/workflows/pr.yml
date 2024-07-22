@@ -9,6 +9,10 @@ on:
       - alpha
       - rc-*
 jobs:
+  call-worflow-depcheck:
+    if: ${{ github.actor != 'dependabot[bot]' && github.actor != 'renovate[bot]'}}
+    name: 🔍🔗 Check Dependencies
+    uses: ./.github/workflows/depcheck.yml
   call-worflow-docs:
     if: ${{ github.actor != 'dependabot[bot]' && github.actor != 'renovate[bot]'}}
     name: 📝 Creating Documentation
