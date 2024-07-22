@@ -1,4 +1,4 @@
-# template-nodes-project
+# Template NodeJS Project
 
 ## How to use
 
