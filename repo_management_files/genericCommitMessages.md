@@ -1,6 +1,6 @@
 # Generic Commit Messages
 
-If you are making a commit without using the `cz` commit or the `bun cm` or `bun cm2` scripts then these are handy to copy and used to format your commits with.
+If you are making a commit without using the `cz` commit or the `bun cm` or `bun cm2` scripts then these are handy to copy and used to format your commits with. Also check out [this gist guide](https://gist.github.com/brianclements/841ea7bffdb01346392c#commit-message-header) to get a deeper understanding and intuition on how the commit messages are intended to be formatted.
 
 ## Examples of when you would use these
 

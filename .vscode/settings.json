@@ -11,11 +11,13 @@
     "esdoc",
     "esdocs",
     "gitmoji",
+    "gitmojis",
     "iname",
     "modclean",
     "oxlint",
     "quickfix",
     "shieldio",
+    "Shortcode",
     "snyk",
     "upgradeps"
   ],

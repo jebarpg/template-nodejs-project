@@ -1,7 +1,8 @@
 {
   // Comments are supported, like tsconfig.json
+  // https://typedoc.org/options/configuration/
   "entryPointStrategy": "expand",
-  "entryPoints": ["./src"],
+  "entryPoints": ["./src/app.ts"],
   "exclude": [
     "node_modules/**/*",
     "dist/**/*",

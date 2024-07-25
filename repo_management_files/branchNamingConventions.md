@@ -3,7 +3,7 @@
 NOTICE:
 
 * Please review [`release.config.ts` (click)](../release.config.ts) to configure the release branches appropriately for your project.
-* This repository uses [validate-branch-name](https://www.npmjs.com/package/validate-branch-name) which gets ran as a pre-commit using [husky](https://github.com/typicode/husky) Git Hooks to keep branch naming consistent with the following conventions. Please review and customize the rules in the [package.json](../package.json#L128) file under `"validate-branch-name"` to fit your specific project needs.
+* This repository uses [validate-branch-name](https://www.npmjs.com/package/validate-branch-name) which gets ran as a pre-commit using [husky](https://github.com/typicode/husky) Git Hooks to keep branch naming consistent with the following conventions. Please review and customize the rules in the [package.json validate-branch-name](../package.json#L128) to make sure they fit your project's needs and specifications.
 * Dependabot and Renovate are also used for automated package updating and are included in the rules for validate-branch-name.
 
 This document outlines the branch naming conventions for our project to ensure consistency and clarity in our Git workflow, especially for GitHub Actions CI/CD pipelines. The conventions align with the use of Gitmoji, Commitizen, Conventional Changelog, and Semantic Release.
