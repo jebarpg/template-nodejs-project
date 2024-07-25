@@ -33,7 +33,7 @@ NOTE: You can click `file/paths` to open that file and referenced arrays to open
 - [ ] [`repo_management_files/branchNamingConventions.md`](./branchNamingConventions.md) Make sure the reference to [`package.json 'validate-branch-name'`](../package.json#L128) is still on the correct line number in the link, both here and in the `branchNamingConventions` file.
 - [ ] [`.depcheckrc.json`](../.depcheckrc.json)
   - [ ] Check to make sure all the listed [`ignores`](../.depcheckrc.json#L2) still are valid or need removing. Do this by checking your [`package.json 'dependencies'`](../package.json#L224) and [`package.json 'devDependencies'`](../package.json#L229) to see if they still exist in your projects dependencies.
-- [ ] [`commitlint.config.ts`](../commitlint.config.ts) 
+- [ ] [`commitlint.config.ts`](../commitlint.config.ts)
   - [ ] Make sure the [`commitlint.config.ts 'typeEnum'`](../commitlint.config.ts#L32) is updated with the output of the [`repo_management_files/cz-type-extract.js`](./cz-type-extract.js) script.
 - [ ] [`package.json 'keywords'`](../package.json#L5)
   - [ ] Make sure the 'keywords' is still reflective of your project.
