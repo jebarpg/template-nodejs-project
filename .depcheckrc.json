@@ -4,6 +4,7 @@
     "jest-snapshot",
     "quick-lint-js",
     "prettier-plugin-organize-imports",
+    "pretty-quick",
     "typedoc",
     "typedoc-plugin-coverage",
     "typedoc-plugin-extras",

@@ -9,3 +9,16 @@ updates:
     directory: '/' # Location of package manifests
     schedule:
       interval: 'weekly' # Runs every Monday
+    # https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#ignore
+    ignore:
+      # Ignore updates to the 'semantic-release' package
+      # semantic release currently needs to keep the version before <23 which is version 22.0.12 as of May 3rd 2024
+      - dependency-name: 'semantic-release'
+      # Ignore updates to the 'eslint' package
+      # @typescript-eslint/eslint-plugin@7.8.0 currently doesn't support eslint v9.0.0+ as of May 3rd 2024 so use eslint:^8.57.0, and preventing it from updating with renovate for now
+      - dependency-name: 'eslint'
+  #https://docs.github.com/en/code-security/dependabot/working-with-dependabot/keeping-your-actions-up-to-date-with-dependabot
+  - package-ecosystem: 'github-actions' # See documentation for possible values
+    directory: '/' # Location of package manifests
+    schedule:
+      interval: 'weekly' # Runs every Monday
