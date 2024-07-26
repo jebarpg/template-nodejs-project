@@ -4,9 +4,10 @@ Some files I don't list such as .eslintrc.json or .gitignore even though they mi
 
 ## Files and Sections to review
 
-NOTE: You can click `file/paths` to open that file and referenced arrays to open and highlight that section of the file.
+NOTE: You can click `file/paths` to open that file and referenced arrays to open and highlight that section of the file. Note: some of the highlighted sections when you click on the `file/paths` may be out of sync when you start adding new scripts etc to your project. For now you have to manually update this file; in the future there will be a script to automatically update the line number in this file. (this NOTE was last updated 07/25/2024)
 
-- [ ] Run `bun dev:all` weekly on Sunday and fix any issues it reports.
+- [ ] Add more audits to this file if there are certain manual updates that need checking regularly. Use the following check lists to gain some intuition on what sort of things qualify as needing to be audited/tracked regularly.
+- [ ] Run [`bun dev:all`](../package.json#L80) weekly on Sunday and fix any issues it reports.
 - [ ] Make sure all workflows yaml files in [`../.github/workflows`](../.github/workflows/) have emoji's at the beginning of all their `name` sections. Consider using ***[ChatGPT](https://chatgpt.com/share/b54be984-4344-4e8f-bb56-c39595a52fa4)*** `Prompt: 'Generate an emoji to represent the following text: "Check out Git repository"'` to generate an emoji(s) for each `name` string.
 - [ ] [`.husky/pre-commit`](../.husky/pre-commit)
   - [ ] check to make sure you are running all the scripts you still want to have running during a pre-commit.
