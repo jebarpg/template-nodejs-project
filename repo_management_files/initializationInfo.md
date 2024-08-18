@@ -4,6 +4,9 @@ This file explains what each piece of information asked for in the [initializati
 
 ## Required Information Descriptions
 
+### Accounts To Create
+
+### Project Specific Information Fields
 
 - Project Name
   - package.json "name": ""
