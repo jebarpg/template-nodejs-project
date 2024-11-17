@@ -18,7 +18,8 @@
     "conventional-changelog-gitmoji-config",
     "nodemon",
     "semantic-release-config-gitmoji",
-    "semantic-release-gitmoji"
+    "semantic-release-gitmoji",
+    "validate-branch-name"
   ],
   "quiet": true
 }
