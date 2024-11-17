@@ -19,34 +19,34 @@ jobs:
       - name: 📂 Check out Git repository
         uses: actions/checkout@v4
 
-      - name: 🔧 Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node }}
+      #- name: 🔧 Set up Node.js
+      #  uses: actions/setup-node@v4
+      #  with:
+      #    node-version: ${{ matrix.node }}
 
       - name: 🛠️ Set up Bun.sh
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
 
-      - name: 📦 Install Node.js dependencies
-        run: npm ci
+      #- name: 📦 Install Node.js dependencies
+      #  run: npm ci
 
       # CHANGE/ADD/SETUP YOUR ADDITIONAL TEST COMMANDS AND TEST ACTIONS BELOW HERE:
 
-      - name: 🧪 📊 Test and coverage
-        run: npm test
+      #- name: 🧪 📊 Test and coverage
+      #  run: npm test
 
-      - name: 📤 📊 Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v4
-        # https://apache.googlesource.com/airflow-codecov-action/+/f8c87eb84eff353c49fcb2f295110a82afdca7ae/README.md#arguments
-        with:
-          token: ${{ secrets.token }} # not required for public repos
-          # file: ./coverage.xml # optional
-          # files: ./coverage1.xml,./coverage2.xml # optional
-          # directory: ./coverage/reports/ # optional
-          flags: unittests # optional
-          # env_vars: OS,NODE  # optional
-          name: ☂️ codecov-umbrella # optional
-          fail_ci_if_error: true # optional (default = false)
+      #- name: 📤 📊 Upload coverage reports to Codecov
+      #  uses: codecov/codecov-action@v4
+      #  # https://apache.googlesource.com/airflow-codecov-action/+/f8c87eb84eff353c49fcb2f295110a82afdca7ae/README.md#arguments
+      #  with:
+      #    token: ${{ secrets.token }} # not required for public repos
+      #    # file: ./coverage.xml # optional
+      #    # files: ./coverage1.xml,./coverage2.xml # optional
+      #    # directory: ./coverage/reports/ # optional
+      #    flags: unittests # optional
+      #    # env_vars: OS,NODE  # optional
+      #    name: ☂️ codecov-umbrella # optional
+      #    fail_ci_if_error: true # optional (default = false)
           verbose: true # optional (default = false)
