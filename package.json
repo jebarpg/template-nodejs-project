@@ -75,7 +75,7 @@
     "dep:update:check": "bunx upgradeps",
     "dep:update:skip": "bunx upgradeps -u -s",
     "depcheck:run": "bunx depcheck | xargs",
-    "depcheck:ci": "echo NOTE: If this errors out please consider removing dependencies from package.json or adding them to the .depcheckrc.json 'ignores' array && bunx depcheck:run",
+    "depcheck:ci": "echo NOTE: If this errors out please consider removing dependencies from package.json or adding them to the .depcheckrc.json 'ignores' array && bun run depcheck:run",
     "dev": "bun i && bun run build:bun && bun concurrently -k \"bun run hot-reload\" \"bun run live-reload\" \"bun run format:watch\" \"bun run test:watch:fast\"",
     "dev:all": "git pull && bun run dev:pre && bun run lint:quick && bun run lint:ox && bun run dev:build",
     "dev:build": "bun run build && bun run docs && bun dev",
