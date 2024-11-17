@@ -15,6 +15,7 @@ mkdir {your_empty_repo_name}
 git clone https://github.com/jebarpg/template-nodejs-project.git {your_empty_repo_name}
 cd {your_empty_repo_name}
 rm -rf .git package-lock.json docs/typedocs/* CHANGELOG.md
+git config --global init.defaultBranch main
 git init
 ```
 
