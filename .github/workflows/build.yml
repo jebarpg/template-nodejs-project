@@ -28,7 +28,7 @@ jobs:
       #   run: npm ci
 
       - name: 📦 Install Node.js dependencies with Bun
-        run: bun install --frozen-lockfile
+        run: bun install
 
       # - name: 🏗️ Build project with Node.js
       #  run: npm run build
