@@ -14,24 +14,24 @@ jobs:
       - name: 📂 Check out Git repository
         uses: actions/checkout@v4
 
-      - name: 🛠️ Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node }}
+      #- name: 🛠️ Set up Node.js
+      #  uses: actions/setup-node@v4
+      #  with:
+      #    node-version: ${{ matrix.node }}
 
       - name: 🛠️ Set up Bun.sh
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
 
-      - name: 📦 Install Node.js dependencies with Node.js
-        run: npm ci
+      # - name: 📦 Install Node.js dependencies with Node.js
+      #   run: npm ci
 
       - name: 📦 Install Node.js dependencies with Bun
         run: bun install --frozen-lockfile
 
-      - name: 🏗️ Build project with Node.js
-        run: npm run build
+      # - name: 🏗️ Build project with Node.js
+      #  run: npm run build
 
       - name: 🏗️ Build project with Bun
         run: bun run build
