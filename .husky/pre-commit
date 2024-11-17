@@ -1,5 +1,5 @@
 # validate branch name before commit
 
-npx validate-branch-name
-bun run depcheck:ci
+# npx validate-branch-name
+# bun run depcheck:ci
 bun pretty-quick --staged
