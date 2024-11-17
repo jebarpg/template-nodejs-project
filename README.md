@@ -110,7 +110,7 @@ In test.yml do the following:
 
 ```bash
 bun i
-bun cm
+bun cz
 ```
 
 for the commit type select: ` init              🎉  Initial commit. `
@@ -126,3 +126,15 @@ git push --set-upstream origin main
 ```
 
 Open up issue #1 on your `https://github.com/{username}/{your_empty_repo_name}/issues` and complete all the tasks.
+
+After the initial commiyt in .husky/pre-commit uncomment out the two lines
+```bash
+# npx validate-branch-name
+# bun run depcheck:ci
+```
+to
+
+```bash
+npx validate-branch-name
+bun run depcheck:ci
+```
