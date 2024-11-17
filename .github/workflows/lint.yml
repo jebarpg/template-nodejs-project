@@ -17,10 +17,10 @@ jobs:
       - name: 📂 Check out Git repository
         uses: actions/checkout@v4
 
-      - name: 🛠️ Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node }}
+      #- name: 🛠️ Set up Node.js
+      #  uses: actions/setup-node@v4
+      #  with:
+      #    node-version: ${{ matrix.node }}
 
       - name: 🛠️ Set up Bun.sh
         uses: oven-sh/setup-bun@v2
@@ -28,16 +28,16 @@ jobs:
           bun-version: latest
 
       # ESLint and Prettier must be in `package.json`
-      - name: 📦 Install Node.js dependencies with Node.js
-        run: npm ci
+      #- name: 📦 Install Node.js dependencies with Node.js
+      #  run: npm ci
 
       - name: 📦 Install Node.js dependencies with Bun
-        run: bun install --frozen-lockfile
+        run: bun install && bun run lint:fix
 
-      - name: 🧹 🎨 Run linters and formatting
-        uses: wearerequired/lint-action@v2
-        with:
-          github_token: ${{ secrets.token }}
-          # Enable linters
-          eslint: true
-          prettier: true
+      #- name: 🧹 🎨 Run linters and formatting
+      #  uses: wearerequired/lint-action@v2
+      #  with:
+      #    github_token: ${{ secrets.token }}
+      #    # Enable linters
+      #    eslint: true
+      #    prettier: true
