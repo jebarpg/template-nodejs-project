@@ -67,7 +67,7 @@
     "build:devdeps2": "grep -Fxv -f <(cat d) <(cat dd) | awk '{print $1 > \"dd\"}'",
     "build:devdeps:badges": "bun run build:deps && bun run build:devdeps1 && bun run build:devdeps2 && cat dd | xargs npx update-badge --behind  && rm d dd",
     "clean": "rm -rf node_modules",
-    "cm:merge": "node repo_management_files/extractFileScopes.js && npm install && git add . && bun git:all &&  cz",
+    "cm:merge": "git add . && bun git:all &&  cz",
     "cm": "git pull && bun cm:merge",
     "dep:check": "bunx upgradeps && npm outdated | xargs && bunx npm-check-updates && bunx check-dependencies && bun ./node_modules/npm-check/bin/cli.js -s | xargs && npm audit",
     "dep:skip": "bunx upgradeps -s semantic-release",
