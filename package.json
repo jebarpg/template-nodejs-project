@@ -92,7 +92,7 @@
     "format:git:modified": "bun prettier --write $(git diff --name-only --diff-filter d | grep '.ts$' | xargs)",
     "format:watch": "bunx onchange \"**/*\" -- prettier --write --cache --cache-strategy metadata --ignore-unknown {{changed}}",
     "git:added": "git diff --cached --name-only --diff-filter=A",
-    "git:all": "git diff --cached --name-status --diff-filter=ACDMRTUXB*",
+    "git:all": "git diff --cached --name-status",
     "git:modified": "git diff --cached --name-only --diff-filter=M",
     "hot-reload": "bun --hot ./src/app.ts",
     "license:check": "bunx license-checker | grep 'licenses:' | sort -u",
