@@ -125,6 +125,15 @@ NOTE: if you haven't run the issue.sh you can press enter to skip the issues
 git push --set-upstream origin main
 ```
 
+```
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
+
+'Please make sure to create a [GitHub personal token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line) and to set it in the `GH_TOKEN` or `GITHUB_TOKEN` environment variable on your CI environment. The token must allow to push to the repository {your_username/{your_empty_repo_name}.',
+
+
 Open up issue #1 on your `https://github.com/{username}/{your_empty_repo_name}/issues` and complete all the tasks.
 and run 
 
