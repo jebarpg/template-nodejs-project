@@ -40,12 +40,6 @@ or
 
 To create all the issues needed to finish setting this repo up. Look at issue #1 to and follow the directions.
 
-
-
-
-
-
-
 -----------------------------------------------------
 PUT THIS INTO ISSUE #1
 
@@ -58,60 +52,6 @@ In package.json file do the following:
     - [ ] review the validate-branch-name->pattern to see if the branches are approriate for your project
     - [ ] review the cz-gitmoji-adapter->scopes list to see if the enteries are approritate for your project
     - [ ] change publishConfig->access to `public` or `restricted` (for private)
-
-```bash
-bun i
-bun cm
-```
-
-In build.yml do the following:
-
-```bash
-bun i
-bun cm
-```
-
-In depcheck.yml do the following:
-
-```bash
-bun i
-bun cm
-```
-
-In docs.yml do the following:
-
-```bash
-bun i
-bun cm
-```
-
-In lint.yml do the following:
-
-```bash
-bun i
-bun cm
-```
-
-In pr.yml do the following:
-
-```bash
-bun i
-bun cm
-```
-
-In release.yml do the following:
-
-```bash
-bun i
-bun cm
-```
-
-In test.yml do the following:
-
-```bash
-bun i
-bun cz
-```
 
 for the commit type select: ` init              🎉  Initial commit. `
 for the scope type select; [none]
